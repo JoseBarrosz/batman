@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Batman</title>
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <header>
+            <h1>Batman Page</h1>
+            <nav>
+                  <a href="https://pt.wikipedia.org/wiki/Batcaverna">Home</a>
+                  <a href="https://www.lojadccomics.com.br/faq">Contato</a>
+                  <a href="https://pt.wikipedia.org/wiki/Batman">Sobre</a>
+            </nav>
+      </header>
+      <div id="corpo">
+            <div id="texto">
+            <p>
+                 <b> Atalhos utilizados na página:</b></p>
+                 <p> CTRL + r serve para acessar o link Sobre da página;</p>
+                 <p> CTRL + i serve para acessar o link da imagem da página;</p>
+                 <p> CTRL + m serve para acessar o bloco de mensagem da página;</p>
+        </p>
+      </div>
+ 
+        <a href="https://e7.pngegg.com/pngimages/791/718/png-clipart-batman-superman-diana-prince-dc-animated-universe-drawing-batman-comics-heroes-thumbnail.png" target="_blank">
+            <img src="batman.png" alt="Imagem Placeholder"> </a>
+            
+        <div id="mensagem-form">
+            <input type="text" id="mensagem-input" placeholder="Digite sua mensagem">
+            <button id="enviar-btn">Enviar</button>
+        </div>
+    </div>
+
+    <footer>
+      &copy; 2024 - Todos os direitos reservados - Desenvolvido por José Barros
+  </footer>
+  <script>
+       
+
+      document.addEventListener("keydown", function(event) {
+            if (event.ctrlKey && event.key === "r") {
+                  window.location.href = "https://pt.wikipedia.org/wiki/Batman";
+            }
+            if (event.ctrlsKey && event.key === "i") {
+                  window.open = "https://e7.pngegg.com/pngimages/791/718/png-clipart-batman-superman-diana-prince-dc-animated-universe-drawing-batman-comics-heroes-thumbnail.png";
+            }
+            if (event.ctrlKey && event.key === "m") {
+                  document.getElementById("mensagem-input").focus();
+            }
+      });
+ </script>
+  
+</body>
+</html>
+
+      
